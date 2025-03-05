@@ -32,7 +32,15 @@ Complete the following steps using Copilot chat, Copilot Edits, chat participant
    - Change the definition of the Pet object
    - GET /pet/{id} only returns a Pet if the pet in question has the status "available"
    - Add validation of the Pet object to POST /pet
+5. Inject a bug in the code and check if /fix can spot it
+6. Use /explain on part of the code and see if it produces the correct explanation
 
+Not confident with REST APIs? Implement a class with the following helper methods and unit tests for them. Perform rest the steps listed above.
+- Count vowels
+- Is a prime number
+- Generate Fibonacci sequence up to n terms
+- Count the number of lines in a file
+- Check if a string is a palindrome
 
 ### Exercise 3: Repository Custom Instructions
 Custom instructions is a feature that enables automatically inserting contextual details (e.g. about coding conventions, used technologies, project structure etc) to every prompt you make. Repository Custom Instructions make it possible to share the same custom instructions among your team. 
@@ -62,4 +70,17 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
 3. Click on "Edit in settings.json"
 4. Add custom instructions according to the documentation
 5. Try to generata some code to the pet project and see that that the instrcutions are respected
-   
+
+### Exercise 5: Copilot CLI
+- Install the Copilot CLI tool according to the [instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/configure-personal-settings/installing-github-copilot-in-the-cli)
+- Authenticate to GitHub using the gh command line tool
+- Try to explain and create shell commands according to the [instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
+  - Suggest how to undo the last git commit
+  - Suggest how to install a specific version of nginx on Ubuntu 
+  - Explain ```find /var/log -type f -name "*.log" -mtime +7 -exec gzip {} \; -exec mv {}.gz /backup/logs/ \;```
+
+### Exercise 6: GitHub.com (requires a GitHub repository)
+- Push your code to the repository on GitHub.com
+- Use copilot in the browser to make questions about the code base
+- Make a change to the code and open a pull request. Let Copilot generate the PR description.
+
