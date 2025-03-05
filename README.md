@@ -34,5 +34,28 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
 
 ## Copilot Chat and Edits
 
-### Exercise 1: Slash commands, referencing files, chat participants
-[Available slash commands in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022#slash-commands)
+### Exercise 3: Slash commands, referencing files, chat participants
+
+**Visual Studio**
+- [Slash commands](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022#slash-commands)
+- [File references](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022#reference)
+
+**VS Code**
+- [Slash commands](https://code.visualstudio.com/docs/copilot/copilot-chat#_slash-commands) 
+- [Chat participants](https://code.visualstudio.com/docs/copilot/copilot-chat#_chat-participants)
+
+**Steps**
+1. Check which chat participants, slash commands and file reference are available in your IDE by opening the chat and typing @, # or / in the chat window.
+2. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
+   -- Note: Copilot extensions change rapidly and the documenation may not by up-to-date
+3. Discuss within your group on how the different helpers work
+
+### Exercixe 4: API implementation
+Complete the following steps using Copilot chat, Copilot Edits, chat participants, file references, slash commands and other Copilot features.
+
+1. Using the programming language of your choise, implement the following REST API, one API endpoint at a time. Use in-memory database for storing the data.
+<img width="740" alt="image" src="https://github.com/user-attachments/assets/5183c1a2-397d-4908-b439-35ce5fd5a5e9" />
+2. Test that the implementation works using curl
+3. Generate unit tests for the API (e.g. using /setupTests and /test and make sure they are working
+4. Using Copilot Edits, make a small change that affects multiple files, e.g. the API implementation and the unit tests. Examples:
+   -- Change the definition of the Pet object
