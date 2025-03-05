@@ -1,6 +1,6 @@
 # GitHub Copilot Hacathon: Exercises for Part 1
 
-## Copilot Chat and Edits
+## Copilot Chat and Copilot Edits
 
 ### Exercise 1: Slash commands, referencing files, chat participants
 
@@ -14,9 +14,10 @@
 
 **Steps**
 1. Check which chat participants, slash commands and file reference are available in your IDE by opening the chat and typing @, # or / in the chat window.
-2. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
+   - Note: these are only available in the chats, not in Copilot Edits!
+3. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
    - Note: Copilot extensions change rapidly and the documenation may not by up-to-date
-3. Discuss within your group on how the different helpers work
+4. Discuss within your group on how the different helpers work
 
 ### Exercixe 2: API implementation
 Complete the following steps using Copilot chat, Copilot Edits, chat participants, file references, slash commands and other Copilot features.
@@ -45,8 +46,8 @@ Custom instructions is a feature that enables automatically inserting contextual
 1. Create a custom instructions file (tip: you can use Copilot to generate content in it). Add instructions that would be relevant in your current project, e.g:
     - Project structure
     - Coding standards
-    - Requirements for certain tools (e.g. dependency managers)
-    - Documenation of files/functions/methods
+    - Tool requirements (e.g. application frameworks, dependency managers, unit test frameworks)
+    - Documenation practices of files/functions/methods
     - Naming conventions
     - Etc
 1. Try to generate some code and see that the instructions are respected
