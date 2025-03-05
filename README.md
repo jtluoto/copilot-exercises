@@ -47,7 +47,7 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
 **Steps**
 1. Check which chat participants, slash commands and file reference are available in your IDE by opening the chat and typing @, # or / in the chat window.
 2. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
-   -- Note: Copilot extensions change rapidly and the documenation may not by up-to-date
+   - Note: Copilot extensions change rapidly and the documenation may not by up-to-date
 3. Discuss within your group on how the different helpers work
 
 ### Exercixe 4: API implementation
@@ -59,6 +59,9 @@ Complete the following steps using Copilot chat, Copilot Edits, chat participant
 2. Test that the implementation works using curl
 3. Generate unit tests for the API (e.g. using /setupTests and /test and make sure they are working
 4. Using Copilot Edits, make a changes to the codebase that affect multiple files. Make sure that application logic, tests, schema etc are changed correctly. Examples:
-   -- Change the definition of the Pet object
-   -- GET /pets/{id} only returns a Pet if the pet in question has the status "available"
-   -- Add validation of the Pet object to POST /pet 
+   - Add versioning to the API endpoints (e.g. /api/v1/pet)
+   - Change the definition of the Pet object
+   - GET /pet/{id} only returns a Pet if the pet in question has the status "available"
+   - Add validation of the Pet object to POST /pet
+
+   
