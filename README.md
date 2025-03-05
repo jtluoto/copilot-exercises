@@ -54,8 +54,11 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
 Complete the following steps using Copilot chat, Copilot Edits, chat participants, file references, slash commands and other Copilot features.
 
 1. Using the programming language of your choise, implement the following REST API, one API endpoint at a time. Use in-memory database for storing the data.
-<img width="740" alt="image" src="https://github.com/user-attachments/assets/5183c1a2-397d-4908-b439-35ce5fd5a5e9" />
+<img width="736" alt="image" src="https://github.com/user-attachments/assets/482fd8cf-e506-4973-9d11-ede1d86beebf" />
+
 2. Test that the implementation works using curl
 3. Generate unit tests for the API (e.g. using /setupTests and /test and make sure they are working
-4. Using Copilot Edits, make a small change that affects multiple files, e.g. the API implementation and the unit tests. Examples:
+4. Using Copilot Edits, make a changes to the codebase that affect multiple files. Make sure that application logic, tests, schema etc are changed correctly. Examples:
    -- Change the definition of the Pet object
+   -- GET /pets/{id} only returns a Pet if the pet in question has the status "available"
+   -- Add validation of the Pet object to POST /pet 
