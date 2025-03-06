@@ -2,7 +2,26 @@
 
 ## Copilot Chat and Copilot Edits
 
-### Exercise 1: Slash commands, referencing files, chat participants
+### Prerequisities
+- Copilot license
+- Copilot Extensions installed for Visual Studio or VS Code
+- Extension authenticated to github.com organization where you haev the license
+- _Optional_: install [VS Code Insiders](https://code.visualstudio.com/insiders/) if you want to use preview features of Copilot
+
+### Before the exercises
+
+1. Make sure the whole team is able to find the following in the IDE:
+   - Copilot menu
+   - Inline chat
+   - Chat panel
+   - LLM selector
+   - Completions panel
+   - Edits panel
+1. Check which chat participants, slash commands and file reference are available in your IDE by opening the chat and typing @, # or / in the chat window.
+   - Note: these are only available in the chats, not in Copilot Edits!
+1. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
+   - Note: Copilot extensions change rapidly and the documenation may not by up-to-date
+1. Discuss within your group on how the different helpers work
 
 **Visual Studio**
 - [Slash commands](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022#slash-commands)
@@ -12,14 +31,7 @@
 - [Slash commands](https://code.visualstudio.com/docs/copilot/copilot-chat#_slash-commands) 
 - [Chat participants](https://code.visualstudio.com/docs/copilot/copilot-chat#_chat-participants)
 
-**Steps**
-1. Check which chat participants, slash commands and file reference are available in your IDE by opening the chat and typing @, # or / in the chat window.
-   - Note: these are only available in the chats, not in Copilot Edits!
-3. In teams familiarize yourselves with the chat participants, slash commands and file references available in your IDE, using the documentation
-   - Note: Copilot extensions change rapidly and the documenation may not by up-to-date
-4. Discuss within your group on how the different helpers work
-
-### Exercixe 2: API implementation
+### Exercixe 1: API implementation
 Complete the following steps using Copilot chat, Copilot Edits, chat participants, file references, slash commands and other Copilot features.
 
 1. Using the programming language of your choise, implement the following REST API, one API endpoint at a time. Use in-memory database for storing the data.
@@ -42,7 +54,7 @@ Not confident with REST APIs? Implement a class with the following helper method
 - Count the number of lines in a file
 - Check if a string is a palindrome
 
-### Exercise 3: Repository Custom Instructions
+### Exercise 2: Repository Custom Instructions
 Custom instructions is a feature that enables automatically inserting contextual details (e.g. about coding conventions, used technologies, project structure etc) to every prompt you make. Repository Custom Instructions make it possible to share the same custom instructions among your team. 
 
 [GitHub Documentation for Custom Instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot?tool=visualstudio)
@@ -60,7 +72,7 @@ Custom instructions is a feature that enables automatically inserting contextual
     - Etc
 1. Try to generate some code and see that the instructions are respected
 
-### Exercise 4: Custom Instructions in VS Code Settings
+### Exercise 3: Custom Instructions in VS Code Settings
 Custom instructions can be also defined in VS Code Settings. If you define custom instructions in both the .github/copilot-instructions.md file and in settings, Copilot tries to combine instructions from both sources.
 
 [VS Code Documentation on Custom Instructions settings](https://code.visualstudio.com/docs/copilot/copilot-customization)
@@ -71,7 +83,7 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
 4. Add custom instructions according to the documentation
 5. Try to generata some code to the pet project and see that that the instrcutions are respected
 
-### Exercise 5: Copilot CLI
+### Exercise 4: Copilot CLI
 - Install the Copilot CLI tool according to the [instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/configure-personal-settings/installing-github-copilot-in-the-cli)
 - Authenticate to GitHub using the gh command line tool
 - Try to explain and create shell commands according to the [instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
@@ -79,7 +91,7 @@ Custom instructions can be also defined in VS Code Settings. If you define custo
   - Suggest how to install a specific version of nginx on Ubuntu 
   - Explain ```find /var/log -type f -name "*.log" -mtime +7 -exec gzip {} \; -exec mv {}.gz /backup/logs/ \;```
 
-### Exercise 6: GitHub.com (requires a GitHub repository)
+### Exercise 5: GitHub.com (requires a GitHub repository)
 - Push your code to the repository on GitHub.com
 - Use copilot in the browser to make questions about the code base
 - Make a change to the code and open a pull request. Let Copilot generate the PR description.
